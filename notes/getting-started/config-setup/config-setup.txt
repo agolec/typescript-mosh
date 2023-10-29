@@ -1,0 +1,23 @@
+Steps:
+
+    In the terminal, type tsc --init.
+
+    This creates a tsconfig.json file.
+
+    For detailed info, check documentation at: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+
+Extra info:
+
+    The presence of tsconfig.json indicates that the directory that file is located in will be the project root for a Typescript project.
+
+    when you are in the terminal and type 'tsc' with no input files, the compiler searches for the tsconfig.json file, starting in the current directory you were in when you executed the command, and continues up the parent directory chain.
+
+    The tsconfig.json file gives options for us to state where the root directory is, where to generate the javascript files when we compile, whether or not to remove comments, etc.
+
+How to specify the root directory of the typescript project:
+
+    To state where we will place our typescript files, we uncomment the rootDir option/line under the Module section.
+
+How to specify where to place generated .js files after compilation:
+
+    Uncomment the outDir line under the Emit section.

@@ -1,0 +1,35 @@
+Top three Typescript questions.
+
+Why do we need it?
+
+
+
+what is it?
+
+    Typescript is a subset of Javascript with explicit typing. 
+
+    This is statically typed language, as opposed to a dynamically typed language.
+    
+    In a statically typed language, We declare a variable of a type, int, bool,etc, and the variable will only ever be that type.
+
+    In a dynamically typed language, we don't have to specify a type at all. The type will be determined at runtime. The type can even change for the same variable that was declared.
+
+    Dynamic languages allow great flexibility, but we have to test functions with every kind of edge case imaginable due to the fact that we could pass in any variables to any methods, even if the type of the variable is not what the function expects to work with.
+
+    Statically typed languages can prevent you from writing code like the above, by checking the type of an argument to a function at compile time instead of runtime, and avoid issues that would arise from this.
+
+
+    Pros and Cons
+
+    Pros:
+
+        Typescript has newer features that may exist here before they're implemented in Javascript.
+
+    Cons:
+        We must compile our code every time.
+
+        Compilation: Must give our code to the Typescript compiler. Performs transpilation to turn our .ts files into .js files.
+
+        We must do this since Web Browsers do not understand TypeScript.
+
+        We must be disciplined with our code due to the typing involved. We can't make lazy code.

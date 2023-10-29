@@ -1,0 +1,16 @@
+Debugging has us return to our tsconfig.json file.
+
+Steps to debug:
+    We must uncomment the sourceMap line/feature under the Emit section.
+
+    Sourcemap shows us how each line in our Typescript code maps to the Javascript code. This is not human-readable. It is for the debugger.
+
+    Click debug option in VSCode > Create launch.json.
+
+    Add a new option "preLaunchTask", inside the configurations object, and set it to text: "tsc: build - tsconfig.json".
+
+Note:
+
+    You MUST uncomment sourceMap in the tsconfig.json file, because Node cannot debug the typescript file.
+    
+    sourceMap creates a Javascript file for Node.js to do debugging.
